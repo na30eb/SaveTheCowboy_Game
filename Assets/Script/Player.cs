@@ -42,6 +42,8 @@ public class Player : MonoBehaviour
             charjump.velocity=new Vector2 (charjump.velocity.x,forcejump);
             MyAnim.Play("Jump_Animation");
             _AudioPlayer.PlayOneShot(JumpingSound);
+                        MyAnim.SetBool("Running",false);
+
         }
         
     }
